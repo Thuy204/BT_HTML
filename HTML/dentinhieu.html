@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lightTrans{
+        border: none;
+        border-radius: 50%;
+        width:100px;
+        height:100px;
+    }
+    </style>
+</head>
+<body>
+    <input class="lightTrans" name="" type="button" id="chcolor" style="background-color: green;" onclick="change()">
+    <script type="text/javascript">
+        function change(){
+            var lightTrans= document.getElementById("chcolor");
+            var current =lightTrans.style.backgroundColor;
+            if(current=="green"){
+                lightTrans.style.backgroundColor="yellow";
+            }
+            else if(current=="yellow"){
+                lightTrans.style.backgroundColor="red";
+            }
+            else{
+                lightTrans.style.backgroundColor="green";
+            }
+        }
+    </script>
+    
+</body>
+</html>
